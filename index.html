@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="navbar">
+            <i><img src="logo.png" alt="logo"></i>
+            <div class="navtext">
+                Download now
+            </div>
+        </div>
+
+        <div class="login">
+            <div class="upper-part">
+                <div class="arrow">←</div>
+
+                <select name="lang" id="lang">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+
+            <h1>Sign in</h1>
+
+            <form action="#">
+                <label for="email">Username</label>
+                <input type="email" class="input-field" id="email" placeholder="Username" onkeyup="ValidateEmail()" required>
+                <span id="email-error"></span>
+                <label for="password">Password</label>
+                <input type="password" class="input-field" id="password" placeholder="Password" >
+                <span id="password-condition"></span>
+               
+                <h2>Forgot password?</h2>
+                <input type="submit" name="Submit" id="btn">
+            </form>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
